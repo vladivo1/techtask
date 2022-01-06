@@ -1,6 +1,6 @@
 public interface MatrixPrintable {
 
-    void print(Integer[][] data);
+    void print(int[][] data);
 
 
 }
