@@ -8,21 +8,26 @@ public class SingleLoopPrintableImpl implements MatrixPrintable {
         }
 
         for (int row = 0, col = 0; row < data.length; ) {
-            if (data[row] == null || data[row].length == 0) {
+            if (data[row] == null) {
                 System.out.println(data[row]);
                 row++;
                 continue;
-            }
+            } else if (data[row].length == 0) {
+                System.out.println("empty");
+                row++;
+                continue;
 
-            System.out.print(data[row][col++] + " ");
+            } else
+
+                System.out.print(data[row][col++] + " ");
             if (col == data[row].length) {
                 System.out.println();
                 col = 0;
                 row++;
-                }
             }
-        System.out.println("You used Single Loop");
         }
+        System.out.println("You used Single Loop");
     }
+}
 
 
