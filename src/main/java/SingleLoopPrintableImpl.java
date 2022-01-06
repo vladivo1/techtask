@@ -8,10 +8,6 @@ public class SingleLoopPrintableImpl implements MatrixPrintable {
 
             System.out.print(data[row][col++] + " ");
 
-            if (data[row].length == 0) {
-                row++;
-                continue;
-            }
             if (col == data[row].length) {
                 System.out.println();
                 col = 0;
